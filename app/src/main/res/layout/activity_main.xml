@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="androidHabitation"
+            android:background="#865BD6"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcul des impots locaux"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="Nom"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"
+            />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="244dp"
+            android:layout_height="53dp"
+            android:background="#F7D1CACA"
+            android:layout_marginLeft="100dp"
+            android:hint="Saisissez votre nom"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="Adresse"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"/>
+
+        <EditText
+            android:id="@+id/t2"
+            android:layout_width="247dp"
+            android:layout_height="53dp"
+            android:background="#F7D1CACA"
+            android:layout_marginLeft="100dp"
+            android:hint="Saisissez votre adresse"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="Surface"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"/>
+
+        <EditText
+            android:id="@+id/t3"
+            android:layout_width="250dp"
+            android:layout_height="53dp"
+            android:background="#F7D1CACA"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="100dp"
+            android:hint="Saisissez la surface"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="40dp"
+            android:text="Nombre de pieces"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/t4"
+            android:layout_width="247dp"
+            android:layout_height="53dp"
+            android:background="#F7D1CACA"
+            android:layout_marginLeft="100dp"
+            android:inputType="number"
+            android:hint="Saisissez nbr de pieces"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:background="#F7D1CACA"
+                android:checked="false"
+                android:text="Piscine"
+
+                /> <!-- Par défaut, la case n'est pas cochée -->
+            <Button
+                android:id="@+id/calculButton"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#F7D1CACA"
+                android:text="Calcul">
+
+            </Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="impots de base:">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/output1"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="impots supp:">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/output2"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="impots de base:">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/output3"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
